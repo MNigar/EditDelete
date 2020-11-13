@@ -56,22 +56,7 @@ def yeni():
     else:
         return render_template("yeni.html",message="Xeber elave olunmayib")
 
-# @app.route('/edit/<int:id>',methods=["GET,POST"] )
-# def edit(id):
-    #  if request.method=="POST":
-    #     for i in news:
-    #         if(int(id)==i.id):                     
-    #          i.title=request.form['title']
-    #          i.body=request.form['detail']
-    #          obj=i
-    #          news.session.commit()
-    #     return render_template("edit.html",message="Deyisdi")
-    
-    #  if request.method=="GET":
-    #     for i in news:
-    #         if(int(id)==i.id):                     
-    #           obj=i
-    #     return render_template("edit.html",message="Get",b=obj)
+
    
 @app.route('/edit/<int:id>')
 def edit(id):
